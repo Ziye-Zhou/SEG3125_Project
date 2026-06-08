@@ -1,0 +1,67 @@
+body {
+    background-color: #5c5c5c;
+}
+
+.confirmation-section {
+    background-color: #0b0708;
+    min-height: 720px;
+    padding: 120px 0 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-content {
+    text-align: center;
+}
+
+.check-circle {
+    width: 150px;
+    height: 150px;
+    background-color: #c23035;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 35px auto;
+}
+
+.check-mark {
+    color: #000000;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.confirmation-title {
+    color: #c23035;
+    font-family: "Michroma", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.confirmation-text {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.confirmation-btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 10px 30px;
+    background-color: #c23035;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.confirmation-btn:hover {
+    background-color: #ffffff;
+    color: #c23035;
+}

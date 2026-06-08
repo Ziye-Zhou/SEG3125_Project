@@ -16,10 +16,10 @@
 
     <!-- Page-specific style -->
     <link href="css/service.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Michroma&family=Squada+One&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -29,8 +29,8 @@
         <div class="container">
 
             <a class="navbar-brand brand-block" href="index.html">
-                <span class="brand-name">Ziye Zhou</span>
-                <span class="brand-subtitle">UI Design Portfolio</span>
+                <span class="brand-name">MN Powerlifting</span>
+                <span class="brand-subtitle">Your Professional Coaching Service </span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -67,9 +67,254 @@
         </div>
     </nav>
 
-    <div>
-        <h1>COMING SOON</h1>
-    </div>
+
+
+    <!-- Cover Image Section -->
+    <header class="service-cover-section">
+        <img src="images/cover-05.jpg" class="service-cover-img" alt="Powerlifting cover image">
+    </header>
+
+
+
+    <!-- Our Services Section -->
+    <section class="service-section">
+        <div class="container">
+
+            <h1 class="service-title">Our Services</h1>
+
+            <div class="row">
+
+                <!-- Private Coaching -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card h-100">
+                        <img src="images/private-coach.jpg" alt="Private coaching" class="service-img">
+
+                        <div class="service-card-title">
+                            <h4>Private Coaching</h4>
+                        </div>
+
+                        <div class="service-card-body">
+                            <p>
+                                One-on-one coaching to improve your squat, bench press, and deadlift
+                                form with direct feedback from a coach.
+                            </p>
+
+                            <button id="privateCoachBtn" class="service-btn" type="button">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personalized Training Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card h-100">
+                        <img src="images/personalized-training-plan.png" alt="Personalized training plan" class="service-img">
+
+                        <div class="service-card-title">
+                            <h4>Personalized Training Plan</h4>
+                        </div>
+
+                        <div class="service-card-body">
+                            <p>
+                                A customized weekly strength program designed around your goals,
+                                experience level, and powerlifting progress.
+                            </p>
+
+                            <button id="trainingPlanBtn" class="service-btn" type="button">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nutrition Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card h-100">
+                        <img src="images/nutrition-plan.jpg" alt="Nutrition plan" class="service-img">
+
+                        <div class="service-card-title">
+                            <h4>Nutrition Plan</h4>
+                        </div>
+
+                        <div class="service-card-body">
+                            <p>
+                                Personalized nutrition guidance to help lifters fuel training,
+                                improve recovery, and build consistent eating habits.
+                            </p>
+
+                            <button id="nutritionPlanBtn" class="service-btn" type="button">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Private Coaching Details -->
+        <div id="privateCoachDetails" class="private-detail-section d-none">
+
+            <h2>Private Coaching</h2>
+
+            <p>
+                One-on-one coaching to improve your squat, bench press, and deadlift
+                form with direct feedback from a coach.
+            </p>
+
+            <h3>What this service includes:</h3>
+
+            <ol>
+                <li>Squat, bench press, and deadlift technique review</li>
+                <li>Form correction and movement feedback</li>
+                <li>Beginner-friendly powerlifting instruction</li>
+                <li>Guidance on safe lifting habits</li>
+                <li>Discussion of training goals, session needs, and pricing</li>
+            </ol>
+
+            <h3>Best for:</h3>
+
+            <p>
+                Beginner lifters who want direct coaching and clear feedback on their lifting form.
+            </p>
+
+            <h3>Price:</h3>
+
+            <p>
+                Starting from $50 / session
+            </p>
+
+            <a href="faq.html" class="private-faq-btn">
+                Have questions? View FAQ
+            </a>
+
+        </div>
+
+        <!-- Personalized Training Plan Details -->
+        <div id="trainingPlanDetails" class="private-detail-section d-none">
+
+            <h2>Personalized Training Plan</h2>
+
+            <p>
+                A customized weekly strength program designed around your goals,
+                experience level, and powerlifting progress.
+            </p>
+
+            <h3>What this service includes:</h3>
+
+            <ol>
+                <li>Personalized weekly training schedule</li>
+                <li>Squat, bench press, and deadlift programming</li>
+                <li>Exercise selection based on your experience level</li>
+                <li>Progress tracking and training adjustments</li>
+                <li>Competition preparation support if needed</li>
+            </ol>
+
+            <h3>Best for:</h3>
+
+            <p>
+                Lifters who want structured programming but do not need in-person coaching every session.
+            </p>
+
+            <h3>Price:</h3>
+
+            <p>
+                Starting from $120 / month
+            </p>
+
+            <a href="faq.html" class="private-faq-btn">
+                Have questions? View FAQ
+            </a>
+
+        </div>
+
+        <!-- Nutrition Plan Details -->
+        <div id="nutritionPlanDetails" class="private-detail-section d-none">
+
+            <h2>Nutrition Plan</h2>
+
+            <p>
+                Personalized nutrition guidance to help lifters fuel training,
+                improve recovery, and build consistent eating habits.
+            </p>
+
+            <h3>What this service includes:</h3>
+
+            <ol>
+                <li>Basic nutrition guidance for strength training</li>
+                <li>Meal structure suggestions</li>
+                <li>Support for training energy and recovery</li>
+                <li>Simple habit-building strategies</li>
+                <li>Nutrition advice based on training goals</li>
+            </ol>
+
+            <h3>Best for:</h3>
+
+            <p>
+                Lifters who want general nutrition support to improve consistency, recovery, and gym performance.
+            </p>
+
+            <h3>Price:</h3>
+
+            <p>
+                Starting from $80 / plan
+            </p>
+
+            <a href="faq.html" class="private-faq-btn">
+                Have questions? View FAQ
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Book Appointment Section -->
+    <section class="booking-cta-section">
+        <div class="container text-center">
+
+            <h1 class="booking-cta-title">Ready to Lift Heavier?</h1>
+
+            <p class="booking-cta-text">
+                Choose the right coaching service and take the next step toward your powerlifting goal.
+            </p>
+
+            <a href="appointment.html" class="booking-cta-btn">
+                Book an appointment
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- Contact us Section -->
+    <section class="contact-section">
+        <div class="container text-center">
+
+            <h1 class="contact-title">Contact Us</h1>
+
+            <p class="contact-info">
+                <strong>Address:</strong> 123 XYZ Avenue, Ottawa, ON A1B C2D
+            </p>
+
+            <p class="contact-info">
+                <strong>Phone:</strong> (123) 456-7890
+            </p>
+
+            <p class="contact-info">
+                <strong>Opening Hours:</strong> 9:00 AM to 10:00 PM
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>Designed by Ziye Zhou</p>
+    </footer>
 
     <!-- Bootstrap JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

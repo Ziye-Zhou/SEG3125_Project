@@ -1,0 +1,85 @@
+/*********** Appointment Page ***********/
+body {
+    background-color: #5c5c5c;
+}
+
+.appointment-section {
+    background-color: #c23035;
+    padding: 70px 0;
+    min-height: 720px;
+}
+
+.appointment-box {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 80px 70px 80px;
+}
+
+.appointment-title {
+    color: #000000;
+    font-family: "Michroma", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 1px solid #cfcfcf;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-check-label {
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.appointment-submit-btn {
+    background-color: #c23035;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.appointment-submit-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.appointment-message {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #cafc4f;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.site-footer {
+    padding: 25px 0;
+    background-color: #0b0708;
+    text-align: center;
+}
+
+.site-footer p {
+    color: #c23035;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
