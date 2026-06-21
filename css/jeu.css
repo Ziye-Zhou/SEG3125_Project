@@ -1,3 +1,629 @@
-h1{
+/*********** Basic ***********/
+body {
+    background-color: #ffffff;
+}
+
+h1 {
     margin-top: 1rem;
+}
+
+.bg-dark-green {
+    background-color: #0b0708;
+}
+
+.brand-name {
+    color: #c23035;
+    font-family: "Michroma", sans-serif;
+}
+
+.brand-subtitle {
+    color: #ffffff;
+    font-style: italic;
+}
+
+.nav-link {
+    color: #c23035;
+    font-weight: 700;
+}
+
+.nav-link.active,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+}
+
+/*********** Memory Game Dropdown ***********/
+.memory-dropdown-menu {
+    background-color: #0b0708;
+    border: 2px solid #c23035;
+    border-radius: 0;
+    padding: 10px 0;
+}
+
+.memory-dropdown:hover .memory-dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.memory-dropdown-note {
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 8px 18px;
+    cursor: default;
+}
+
+.memory-dropdown-item {
+    color: #c23035;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    padding: 9px 18px;
+}
+
+.memory-dropdown-item:hover {
+    background-color: #c23035;
+    color: #ffffff;
+}
+
+.dropdown-toggle::after {
+    margin-left: 8px;
+}
+
+
+/*********** Memory Home Section ***********/
+.memory-home-section {
+    min-height: 100vh;
+    padding: 140px 0 70px;
+    background-color: #ffffff;
+}
+
+.memory-main-title {
+    color: #0b0708;
+    font-family: "Squada One", sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+}
+
+
+/*********** Game Options ***********/
+.game-option-box {
+    max-width: 850px;
+    margin: 0 auto 35px;
+    padding: 25px 35px;
+    background-color: #0b0708;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.option-title {
+    color: #c23035;
+    font-family: "Squada One", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.option-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.option-choice input {
+    display: none;
+}
+
+.option-choice span {
+    display: inline-block;
+    min-width: 170px;
+    padding: 10px 24px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #c23035;
+    font-family: "Squada One", sans-serif;
+    font-size: 1.45rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.option-choice span:hover {
+    transform: scale(1.04);
+}
+
+.option-choice input:checked + span {
+    background-color: #c23035;
+    color: #ffffff;
+}
+
+
+/*********** Level List ***********/
+.level-list {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.level-row {
+    width: 100%;
+    min-height: 98px;
+    margin-bottom: 24px;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 22px;
+    background-color: #0b0708;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.level-row:hover {
+    transform: scale(1.03);
+    background-color: #1a1113;
+}
+
+.level-badge {
+    min-width: 175px;
+    padding: 13px 30px;
+    border-radius: 50px;
+    background-color: #c23035;
+    color: #0b0708;
+    font-family: "Squada One", sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.level-info {
+    flex-grow: 1;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-count {
+    color: #c23035;
+    font-family: "Squada One", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1;
+}
+
+.pair-count {
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.play-arrow {
+    color: #c23035;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+
+/*********** Game Section ***********/
+.game-section {
+    min-height: 100vh;
+    padding: 130px 0 80px;
+    background-color: #ffffff;
+}
+
+.game-header {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.back-btn {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 25px;
+    background-color: #c23035;
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #0b0708;
+    color: #c23035;
+}
+
+.game-stats {
+    padding: 12px 24px;
+    border-radius: 25px;
+    background-color: #0b0708;
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.game-title {
+    color: #0b0708;
+    font-family: "Michroma", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.feedback-text {
+    color: #c23035;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/*********** Card Grid ***********/
+.game-board-wrapper {
+    position: relative;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    gap: 18px;
+}
+
+.memory-card {
+    height: 185px;
+    border: none;
+    background-color: transparent;
+    perspective: 1000px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.45s ease;
+    transform-style: preserve-3d;
+}
+
+.memory-card.flipped .card-inner,
+.memory-card.matched .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.card-back {
+    background-color: #0b0708;
+    border: 4px solid #c23035;
+    color: #c23035;
+    font-family: "Squada One", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front {
+    position: relative;
+    transform: rotateY(180deg);
+    background-color: #ffffff;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/*********** Image + Cue Mode ***********/
+.card-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 82%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: transparent;
+}
+
+.lift-name {
+    display: block;
+    color: #c23035;
+    font-family: "Squada One", sans-serif;
+    font-size: 1.45rem;
+    line-height: 1;
+    margin-bottom: 6px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.85);
+}
+
+.cue-text {
+    display: block;
+    color: #000000;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.85);
+}
+
+
+/*********** Cue Focus Mode ***********/
+.cue-focus-front {
+    background-color: #c23035;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cue-focus-content {
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    background-color: #c23035;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cue-focus-content span {
+    color: #ffffff;
+    font-family: "Squada One", sans-serif;
+    font-size: 1.65rem;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.memory-card.matched {
+    cursor: default;
+}
+
+.memory-card.matched .card-front {
+    box-shadow: 0 0 0 4px #0b0708;
+}
+
+
+/*********** End Overlay ***********/
+.end-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-modal {
+    width: 85%;
+    min-height: 360px;
+    padding: 45px 55px;
+    border-radius: 34px;
+    background-color: rgba(255, 255, 255, 0.82);
+    text-align: center;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.end-top {
+    margin-bottom: 35px;
+    padding: 25px 40px;
+    border-radius: 40px;
+    background-color: #c23035;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.end-check {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #0b0708;
+    color: #c23035;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 90px;
+}
+
+.end-modal h2 {
+    color: #0b0708;
+    font-family: "Squada One", sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.end-modal h3 {
+    color: #0b0708;
+    font-family: "Squada One", sans-serif;
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.end-modal p {
+    color: #0b0708;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.end-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.game-action-btn {
+    min-width: 230px;
+    margin: 10px;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 35px;
+    background-color: #c23035;
+    color: #0b0708;
+    font-family: "Squada One", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background-color: #c23035;
+    color: #0b0708;
+}
+
+.game-action-btn:hover,
+.secondary-btn:hover {
+    background-color: #0b0708;
+    color: #c23035;
+}
+
+
+/*********** Contact Section ***********/
+.contact-section {
+    padding: 70px 0;
+    background-color: #0b0708;
+    border-top: 80px solid #ffffff;
+}
+
+.contact-title {
+    color: #ffffff;
+    font-family: "Michroma", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-info strong {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+
+/*********** Footer ***********/
+.site-footer {
+    padding: 25px 0;
+    background-color: #0b0708;
+    text-align: center;
+}
+
+.site-footer p {
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/*********** Responsive ***********/
+@media (max-width: 768px) {
+    .memory-main-title {
+        font-size: 2.4rem;
+    }
+
+    .game-option-box {
+        padding: 22px 18px;
+    }
+
+    .option-choice span {
+        min-width: 140px;
+        font-size: 1.25rem;
+    }
+
+    .level-row {
+        padding: 18px;
+    }
+
+    .level-badge {
+        min-width: 120px;
+        font-size: 1.3rem;
+        padding: 10px 18px;
+    }
+
+    .card-count {
+        font-size: 1.8rem;
+    }
+
+    .play-arrow {
+        font-size: 2.3rem;
+    }
+
+    .game-header {
+        flex-direction: column;
+    }
+
+    .game-stats {
+        justify-content: center;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+        gap: 14px;
+    }
+
+    .memory-card {
+        height: 160px;
+    }
+
+    .end-modal {
+        width: 92%;
+        padding: 30px 22px;
+    }
+
+    .end-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .end-modal h2 {
+        font-size: 3rem;
+    }
+
+    .end-modal h3 {
+        font-size: 2.5rem;
+    }
+
+    .end-buttons {
+        gap: 10px;
+    }
+
+    .game-action-btn {
+        min-width: 190px;
+        font-size: 1.45rem;
+    }
 }
