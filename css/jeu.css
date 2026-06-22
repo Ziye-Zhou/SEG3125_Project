@@ -77,12 +77,25 @@ h1 {
     background-color: #ffffff;
 }
 
-.memory-main-title {
+.memory-main-title,
+.game-title {
     color: #0b0708;
     font-family: "Squada One", sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    line-height: 1.15;
+}
+
+.memory-subtitle,
+.game-subtitle {
+    color: #c23035;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1.5px;
     margin-bottom: 35px;
 }
 
@@ -246,14 +259,6 @@ h1 {
     display: flex;
     gap: 22px;
     flex-wrap: wrap;
-}
-
-.game-title {
-    color: #0b0708;
-    font-family: "Michroma", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 15px;
 }
 
 .feedback-text {
@@ -552,9 +557,15 @@ h1 {
 
 /*********** Responsive ***********/
 @media (max-width: 768px) {
-    .memory-main-title {
-        font-size: 2.4rem;
+    .memory-main-title,
+    .game-title {
+        font-size: 2rem;
     }
+
+    .memory-subtitle,
+    .game-subtitle {
+        font-size: 1rem;
+    }   
 
     .game-option-box {
         padding: 22px 18px;

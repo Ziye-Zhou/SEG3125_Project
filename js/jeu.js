@@ -177,6 +177,10 @@ function MemoryGameApp() {
             e("div", { className: "container" },
 
                 e("h1", { className: "memory-main-title" },
+                    "MN Powerlifting Technique Memory Game"
+                ),
+
+                e("p", { className: "memory-subtitle" },
                     "Match cards to remember lifting cues!"
                 ),
 
@@ -250,7 +254,11 @@ function MemoryGameApp() {
                 )
             ),
 
-            e("h1", { className: "game-title" }, "SBD Technique Memory Game"),
+            e("h1", { className: "game-title" }, "MN Powerlifting Technique Memory Game"),
+
+            e("p", { className: "game-subtitle" },
+                "Match cards to remember lifting cues!"
+            ),
 
             e("p", { className: "feedback-text" }, feedback),
 
