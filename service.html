@@ -45,23 +45,46 @@
                         <a class="nav-link" href="index.html">About Me</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="service.html">Service Site</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="serviceDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Service
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="serviceDropdown">
+                            <li>
+                                <button class="dropdown-item" type="button"
+                                    onclick="document.getElementById('privateCoachBtn').click(); setTimeout(() => document.getElementById('privateCoachDetails').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);">
+                                    Private Coaching
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="dropdown-item" type="button"
+                                    onclick="document.getElementById('trainingPlanBtn').click(); setTimeout(() => document.getElementById('trainingPlanDetails').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);">
+                                    Personalized Training Plan
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="dropdown-item" type="button"
+                                    onclick="document.getElementById('nutritionPlanBtn').click(); setTimeout(() => document.getElementById('nutritionPlanDetails').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);">
+                                    Nutrition Plan
+                                </button>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="jeu.html">Memory Game</a>
+                        <a class="nav-link" href="appointment.html">Book an Appointment</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="ecommerce.html">E-commerce Site</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="analytics.html">Analytics Site</a>
+                        <a class="nav-link" href="faq.html">FAQ</a>
                     </li>
 
                 </ul>
+                        
             </div>
 
         </div>

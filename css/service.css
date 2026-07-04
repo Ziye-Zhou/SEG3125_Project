@@ -255,3 +255,22 @@ body{
     font-weight: 500;
     margin: 0;
 }
+
+/*********** Service Navbar Dropdown ***********/
+.dropdown-menu {
+    background-color: #0b0708;
+    border: 1px solid #c23035;
+    border-radius: 0;
+}
+
+.dropdown-item {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #c23035;
+    color: #ffffff;
+}
