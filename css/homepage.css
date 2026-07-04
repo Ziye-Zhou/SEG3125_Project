@@ -1,9 +1,9 @@
 body {
     padding-top: 70px;
-    background-color: #cafc4f;
+    background-color: #ffffff;
 }
 
-.bg-dark-green{
+.bg-dark-green {
     background-color: #0b0708;
 }
 
@@ -15,73 +15,84 @@ body {
     text-decoration: none;
 }
 
-.brand-name{
-    font-family: "BBH Hegarty", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #cafc4f;
+.brand-name {
+    font-family: "Michroma", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: #c23035;
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
-.brand-subtitle{
+.brand-subtitle {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.75rem;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: 0.3rem;
-    color: #cafc4f;
+    color: #ffffff;
     text-decoration: none;
+    font-style: italic;
 }
 
-.nav-link{
+.nav-link {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
-    color: #cafc4f;
+    font-weight: 700;
+    color: #c23035;
 }
 
-.nav-link.active{
-    color: #F5Fb43;
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-link.active {
+    color: #ffffff;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #F5Fb43;
+    color: #ffffff;
 }
 
 /*********** About Me Section ***********/
-.about-section{
-    padding-top: 5rem;
+.about-section {
     background-color: #0b0708;
-    padding: 50px 40px 50px 40px;
+    padding: 70px 40px;
 }
 
 .about-title {
-    color: #cafc4f;
-    font-family: "BBH Hegarty", sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    color: #c23035;
+    font-family: "Michroma", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 25px;
 }
 
-p{
+p {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #cafc4f;
+    color: #ffffff;
 }
 
+.about-section p {
+    color: #ffffff;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/*********** Cover Carousel Section ***********/
 .cover-carousel-section {
     background-color: #0b0708;
-    padding: 0px 0 0px 0;
-    margin-bottom: 40px;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 /*********** Pictures ***********/
 .carousel {
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
 }
 
 .carousel-img {
-    height: 350px;
+    height: 420px;
     object-fit: cover;
     object-position: center top;
 }
@@ -89,37 +100,40 @@ p{
 /*********** Workflow Section ***********/
 .work-section {
     padding: 70px 0;
+    background-color: #ffffff;
 }
 
 .work-title {
     color: #0b0708;
-    font-family: "BBH Hegarty", sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-family: "Michroma", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .work-card {
     background-color: #0b0708;
-    border: 0px;
+    border: 0;
     border-radius: 0;
 }
 
 .work-card-header {
-    background-color: #0b0708;
-    color: #F5Fb43;
+    background-color: #c23035;
+    color: #000000;
     font-family: 'Squada One', sans-serif;
     font-size: 1.8rem;
     border-bottom: none;
+    padding: 18px 24px;
 }
 
 .work-card-body {
-    background-color: #F5Fb43;
-    color: #0b0708;
+    background-color: #0b0708;
+    color: #ffffff;
     padding: 30px;
 }
 
 .work-card-body p {
-    color: #0b0708;
+    color: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.05rem;
     line-height: 1.6;
@@ -128,18 +142,19 @@ p{
 /*********** Case Study Section ***********/
 .case-section {
     padding: 70px 0;
-    background-color: #cafc4f;
+    background-color: #ffffff;
 }
 
 .case-title {
     color: #0b0708;
-    font-family: "BBH Hegarty", sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-family: "Michroma", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .case-card {
-    background-color: #F5Fb43;
+    background-color: #0b0708;
     border: 0;
     border-radius: 0;
     height: 100%;
@@ -153,25 +168,25 @@ p{
 }
 
 .case-card-title {
-    background-color: #0b0708;
+    background-color: #c23035;
     padding: 20px 25px;
 }
 
 .case-card-title h4 {
-    color: #cafc4f;
+    color: #000000;
     font-family: 'Squada One', sans-serif;
     font-size: 1.8rem;
     margin: 0;
 }
 
 .case-card-body {
-    background-color: #F5Fb43;
-    color: #0b0708;
-    padding: 15px;
+    background-color: #0b0708;
+    color: #ffffff;
+    padding: 25px;
 }
 
 .case-card-body p {
-    color: #0b0708;
+    color: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.05rem;
     line-height: 1.6rem;
@@ -180,32 +195,44 @@ p{
 .case-btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 8px 12px;
-    background-color: #0b0708;
-    color: #F5Fb43;
+    padding: 9px 20px;
+    background-color: #c23035;
+    color: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     text-decoration: none;
-    border-radius: 20px;
-    margin-top: 5px;
+    border-radius: 25px;
 }
 
 .case-btn:hover {
-    background-color: #cafc4f;
-    color: #0b0708;
+    background-color: #ffffff;
+    color: #c23035;
 }
 
 /*********** Technical Requirements Button ***********/
+.tech-section {
+    padding: 70px 0;
+    background-color: #0b0708;
+}
+
+.tech-title {
+    color: #c23035;
+    font-family: "Michroma", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
 .tech-btn {
     display: inline-block;
     padding: 12px 28px;
-    background-color: #cafc4f;
-    color:#0b0708 ;
-    border: 2px solid #cafc4f;
+    background-color: #c23035;
+    color: #ffffff;
+    border: 2px solid #c23035;
     border-radius: 30px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
     cursor: pointer;
     margin-top: 10px;
@@ -213,32 +240,69 @@ p{
 }
 
 .tech-btn:hover {
-    background-color: #F5Fb43;
-    color: #0b0708;
+    background-color: #ffffff;
+    color: #c23035;
+    border-color: #ffffff;
 }
 
 .tech-btn:focus {
-    outline: 3px solid #cafc4f;
+    outline: 3px solid #ffffff;
     outline-offset: 4px;
 }
 
-.tech-section {
-    padding: 70px 0;
-    background-color:#0b0708;
-}
-
-.tech-title {
-    color: #cafc4f;
-    font-family: "BBH Hegarty", sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
 .tech-section p {
-    color: #cafc4f;
+    color: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     max-width: 900px;
     margin-top: 20px;
+}
+
+/*********** Responsive ***********/
+@media (max-width: 991px) {
+    .brand-name {
+        font-size: 1.6rem;
+    }
+
+    .carousel-img {
+        height: 340px;
+    }
+
+    .about-title,
+    .work-title,
+    .case-title,
+    .tech-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 76px;
+    }
+
+    .brand-name {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .brand-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .carousel-img {
+        height: 280px;
+    }
+
+    .about-section {
+        padding: 50px 24px;
+    }
+
+    .about-title,
+    .work-title,
+    .case-title,
+    .tech-title {
+        font-size: 1.6rem;
+    }
 }
