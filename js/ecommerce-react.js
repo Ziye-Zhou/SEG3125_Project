@@ -610,7 +610,25 @@ function ShopPage({ products, filters, resetFilters, viewProduct, addToCart, goT
                     <h1 className="store-section-title">{title}</h1>
                 </div>
 
-                {filters.category !== "All" && (
+                {filters.category === "All" ? (
+                    <div className="category-filter-tabs">
+                        <button
+                            className="category-filter-btn"
+                            type="button"
+                            onClick={() => openCategory("Equipment")}
+                        >
+                            Equipment
+                        </button>
+
+                        <button
+                            className="category-filter-btn"
+                            type="button"
+                            onClick={() => openCategory("Clothing")}
+                        >
+                            Clothing
+                        </button>
+                    </div>
+                ) : (
                     <div className="category-filter-tabs">
                         <button
                             className={`category-filter-btn ${filters.type === "All" ? "is-active" : ""}`}
