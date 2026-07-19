@@ -270,7 +270,42 @@ body{
 }
 
 .dropdown-item:hover,
-.dropdown-item:focus {
+.dropdown-item:focus,
+.dropdown-item.active,
+.dropdown-item:active {
     background-color: #c23035;
     color: #ffffff;
+}
+/************************************************
+    ABOUT ME HOVER DROPDOWN
+************************************************/
+
+.portfolio-nav-item {
+    position: relative;
+}
+
+.portfolio-nav-item:hover > .portfolio-dropdown-menu,
+.portfolio-nav-item:focus-within > .portfolio-dropdown-menu {
+    display: block;
+}
+
+.portfolio-nav-dropdown {
+    background-color: transparent;
+    border: 0;
+}
+
+/* Prevent the dropdown from disappearing while moving the mouse */
+.portfolio-dropdown-menu {
+    top: 100%;
+    margin-top: 0;
+}
+
+/* Optional invisible bridge between link and dropdown */
+.portfolio-nav-item::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 14px;
 }

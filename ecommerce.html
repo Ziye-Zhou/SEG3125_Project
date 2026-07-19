@@ -37,14 +37,57 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About Me</a>
+                    <!-- About Me Dropdown -->
+                    <li class="nav-item dropdown portfolio-nav-item">
+
+                        <a
+                            class="nav-link dropdown-toggle portfolio-nav-dropdown"
+                            href="index.html"
+                            id="aboutMeDropdown"
+                            aria-expanded="false"
+                        >
+                            About Me
+                        </a>
+
+                        <ul
+                            class="dropdown-menu portfolio-dropdown-menu"
+                            aria-labelledby="aboutMeDropdown"
+                        >
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="service.html"
+                                >
+                                    Service Site
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="game.html"
+                                >
+                                    Memory Game
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="analytics.html"
+                                >
+                                    Analytics Site
+                                </a>
+                            </li>
+                        </ul>
+
                     </li>
 
                     <li class="nav-item">
                         <button class="nav-link active top-store-nav" type="button"
                             onclick="window.dispatchEvent(new CustomEvent('mn-store-nav', { detail: 'home' }))">
-                            E-commerce Site
+                            Store
                         </button>
                     </li>
 

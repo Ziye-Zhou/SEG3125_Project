@@ -991,3 +991,78 @@ button {
     display: block;
     background-color: #0b0708;
 }
+
+/*********** Shared About Me Hover Dropdown ***********/
+
+.portfolio-nav-item {
+    position: relative;
+}
+
+.portfolio-nav-dropdown {
+    border: 0;
+    background-color: transparent;
+}
+
+/* Hover or keyboard focus opens the menu */
+.portfolio-nav-item:hover > .portfolio-dropdown-menu,
+.portfolio-nav-item:focus-within > .portfolio-dropdown-menu {
+    display: block;
+}
+
+.portfolio-dropdown-menu.dropdown-menu {
+    --bs-dropdown-bg: #0b0708;
+    --bs-dropdown-border-color: #c23035;
+    --bs-dropdown-border-radius: 0;
+    --bs-dropdown-link-color: #ffffff;
+    --bs-dropdown-link-hover-color: #ffffff;
+    --bs-dropdown-link-hover-bg: #c23035;
+    --bs-dropdown-link-active-color: #ffffff;
+    --bs-dropdown-link-active-bg: #c23035;
+
+    display: none;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    right: auto;
+
+    min-width: 260px;
+    margin: 0;
+    padding: 10px 0;
+
+    background-color: #0b0708;
+    border: 1px solid #c23035;
+    border-radius: 0;
+
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
+    z-index: 1100;
+}
+
+.portfolio-nav-item:hover > .portfolio-dropdown-menu,
+.portfolio-nav-item:focus-within > .portfolio-dropdown-menu {
+    display: block;
+}
+
+.portfolio-dropdown-menu .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 12px 28px;
+
+    background-color: #0b0708;
+    color: #ffffff;
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.portfolio-dropdown-menu .dropdown-item:hover,
+.portfolio-dropdown-menu .dropdown-item:focus,
+.portfolio-dropdown-menu .dropdown-item:active,
+.portfolio-dropdown-menu .dropdown-item.active {
+    background-color: #c23035;
+    color: #ffffff;
+    box-shadow: none;
+}
